@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="30dip"
+    android:background="@color/communication_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+	       <TextView 
+	           android:id="@+id/communication_heading_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dip"
+		      android:textSize="24.5sp"
+		      android:typeface="serif"
+		      android:textColor="@color/communication_heading"
+            android:layout_gravity="center"
+            android:text="@string/communication_heading_label"/>
+        
+		        <Button
+            android:id="@+id/communication_storing_data_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/communication_storing_data" />
+		        
+		        <Button
+            android:id="@+id/communication_interphone_comm_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/communication_interphone_comm" />
+		        
+		        <Button
+            android:id="@+id/communication_ack_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/communication_ack_label" />
+		        
+		        <Button
+            android:id="@+id/communication_quit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/communication_quit" />
+		
+    </LinearLayout>
+
+</ScrollView>

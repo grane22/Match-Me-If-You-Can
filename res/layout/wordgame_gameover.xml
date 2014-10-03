@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<ScrollView
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:padding="10dip">
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/wordgame_gameover_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/wordgame_gameover_msg" />
+        
+        <TextView
+            android:id="@+id/wordgame_gameover_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/wordgame_gameover_score" />
+        
+        <TextView
+            android:id="@+id/wordgame_gameover_accuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/wordgame_gameover_accuracy" />
+        
+        <TextView
+            android:id="@+id/wordgame_gameover_longestword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/wordgame_gameover_longestword" />
+        
+        <Button
+            android:id="@+id/wordgame_gameover_restart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wordgame_gameover_restart_label"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+             />
+        
+        <Button
+            android:id="@+id/wordgame_gameover_quit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wordgame_gameover_quit_label"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+             />
+
+    </LinearLayout>
+</ScrollView>

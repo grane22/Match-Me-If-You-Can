@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="30dip"
+    android:background="@color/communication_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+	       <EditText
+            android:id="@+id/communication_interphone_comm_username_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:hint="@string/communication_interphone_comm_username_hint" >
+        </EditText>
+        
+
+	               <Button
+			            android:id="@+id/communication_interphone_comm_startgame_button"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center"
+			            android:layout_marginBottom="20dp"
+			            android:text="@string/communication_interphone_comm_startgame" />
+	               
+        <EditText
+            android:id="@+id/communication_interphone_comm_sendmsg_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:hint="@string/communication_interphone_comm_sendmsg_hint" >
+        </EditText>
+        
+	               <Button
+                        android:id="@+id/communication_interphone_comm_sendmsg_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/communication_interphone_comm_sendmsg" />
+	               
+	           
+		   <TextView 
+               android:id="@+id/communication_interphone_comm_msg_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dip"
+            android:layout_gravity="center"
+            android:text=""/>
+		   
+		   <Button
+                        android:id="@+id/communication_interphone_comm_quit_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/communication_interphone_comm_quit" />
+    </LinearLayout>
+
+</ScrollView>

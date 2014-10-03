@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="30dip"
+    android:background="@drawable/final_proj_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+		
+        <edu.neu.madcourse.dushyantdeshmukh.utilities.MyTextView
+            android:id="@+id/final_proj_welcome_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:padding="20dp" />
+        
+        <EditText
+            android:id="@+id/final_proj_user_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/final_proj_user_name_hint" />
+         
+        <edu.neu.madcourse.dushyantdeshmukh.utilities.MyButton
+            style="@style/button"
+            android:id="@+id/final_proj_submit_user_name_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/final_proj_submit_user_name" />
+        
+        <EditText
+            android:id="@+id/final_proj_opponent_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:hint="@string/final_proj_opponent_name_hint" />
+        
+        <edu.neu.madcourse.dushyantdeshmukh.utilities.MyButton
+            style="@style/button"
+            android:id="@+id/final_proj_find_opponent_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:text="@string/final_proj_find_opponent" />
+        
+        <edu.neu.madcourse.dushyantdeshmukh.utilities.MyButton
+            style="@style/button"
+            android:id="@+id/final_proj_back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/final_proj_back_to_main_menu_label" />
+      
+        <edu.neu.madcourse.dushyantdeshmukh.utilities.MyTextView
+            android:id="@+id/final_proj_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:padding="20dp" />
+        
+    </LinearLayout>
+
+</ScrollView>

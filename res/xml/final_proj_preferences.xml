@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<PreferenceScreen
+   xmlns:android="http://schemas.android.com/apk/res/android">
+   
+   <CheckBoxPreference
+      android:key="music"
+      android:title="@string/pref_final_proj_music_title"
+      android:summary="@string/pref_final_proj_music_summary"
+      android:defaultValue="true" />
+   
+   <CheckBoxPreference
+      android:key="show_tutorial"
+      android:title="@string/pref_final_proj_show_tutorial"
+      android:summary="@string/pref_final_proj_show_tutorial_summary"
+      android:defaultValue="true" />
+
+   <ListPreference
+            android:key="no_of_imgs"
+            android:entries="@array/final_proj_no_of_imgs"
+            android:summary="@string/pref_final_proj_no_of_imgs_summary"
+            android:entryValues="@array/final_proj_no_of_imgs"
+            android:defaultValue="3"
+            android:title="@string/pref_final_proj_no_of_imgs_title" />
+   
+   <ListPreference
+            android:key="matching_difficulty"
+            android:entries="@array/final_proj_matching_difficulty"
+            android:summary="@string/pref_final_proj_matching_difficulty_summary"
+            android:entryValues="@array/final_proj_matching_difficulty_values"
+            android:defaultValue="2"
+            android:title="@string/pref_final_proj_matching_difficulty_title" />
+</PreferenceScreen>

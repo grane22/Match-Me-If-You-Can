@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="30dip"
+    android:background="@color/two_player_wordgame_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+          android:text="@string/two_player_wordgame_title_label"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_marginBottom="25dip"
+          android:textSize="24.5sp"
+          android:typeface="serif"
+          android:layout_gravity="center"
+          android:textColor="@color/two_player_wordgame_title" />
+        
+        <TextView
+          android:id="@+id/two_player_wordgame_welcome_msg"
+          android:text="@string/two_player_wordgame_welcome_msg"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_marginBottom="25dip"
+          android:textSize="20sp"
+          android:typeface="serif"
+          android:layout_gravity="center"
+          android:textColor="@color/two_player_wordgame_welcome_msg" />
+
+        <EditText
+            android:id="@+id/two_player_wordgame_username_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/two_player_wordgame_username_hint" />
+        
+        <Button
+            android:id="@+id/two_player_wordgame_newgame_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/two_player_wordgame_newgame" />
+
+        <Button
+            android:id="@+id/two_player_wordgame_continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/two_player_wordgame_continue" />
+
+        <Button
+            android:id="@+id/two_player_wordgame_top_scorers_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/two_player_wordgame_top_scorers" />
+        
+        <Button
+            android:id="@+id/two_player_wordgame_ack_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/two_player_wordgame_ack" />
+        
+        <Button
+            android:id="@+id/two_player_wordgame_instructions_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/two_player_wordgame_instructions_title" />
+        
+        <Button
+            android:id="@+id/two_player_wordgame_settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/two_player_wordgame_settings" />
+        
+        <Button
+            android:id="@+id/two_player_wordgame_return_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/two_player_wordgame_return" />
+      
+    </LinearLayout>
+
+</ScrollView>

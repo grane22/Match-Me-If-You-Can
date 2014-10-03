@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<PreferenceScreen
+   xmlns:android="http://schemas.android.com/apk/res/android">
+   <CheckBoxPreference
+      android:key="music"
+      android:title="@string/sudoku_music_title"
+      android:summary="@string/sudoku_music_summary"
+      android:defaultValue="true" />
+   <CheckBoxPreference
+      android:key="hints"
+      android:title="@string/sudoku_hints_title"
+      android:summary="@string/sudoku_hints_summary"
+      android:defaultValue="true" />
+   <ListPreference
+            android:key="rows"
+            android:entries="@array/wordgame_rows"
+            android:summary="@string/pref_wordgame_rows_summary"
+            android:entryValues="@array/wordgame_rows_values"
+            android:title="@string/pref_wordgame_rows" />
+   <ListPreference
+            android:key="cols"
+            android:entries="@array/wordgame_cols"
+            android:summary="@string/pref_wordgame_cols_summary"
+            android:entryValues="@array/wordgame_cols_values"
+            android:title="@string/pref_wordgame_cols" />
+   <ListPreference
+            android:key="difficulty"
+            android:entries="@array/wordgame_difficulty"
+            android:summary="@string/pref_wordgame_difficulty_summary"
+            android:entryValues="@array/wordgame_difficulty_values"
+            android:title="@string/pref_wordgame_difficulty" />
+</PreferenceScreen>

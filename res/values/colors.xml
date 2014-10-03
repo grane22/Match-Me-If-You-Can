@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<resources>
+
+    <!-- Sudoku colors -->
+    <color name="main_background">#550080</color>
+    <color name="main_welcome_msg">#9999FF</color>
+    <color name="sudoku_background">#3500ffff</color>
+    <color name="sudoku_puzzle_background">#ffe6f0ff</color>
+    <color name="sudoku_puzzle_hilite">#ffffffff</color>
+    <color name="sudoku_puzzle_light">#64c6d4ef</color>
+    <color name="sudoku_puzzle_dark">#6456648f</color>
+    <color name="sudoku_puzzle_foreground">#ff000000</color>
+    <color name="sudoku_puzzle_hint_0">#64ff0000</color>
+    <color name="sudoku_puzzle_hint_1">#6400ff80</color>
+    <color name="sudoku_puzzle_hint_2">#2000ff80</color>
+    <color name="sudoku_puzzle_selected">#64ff8000</color>
+
+    <!-- Word Game colors -->
+    <color name="wordgame_background">#223344dd</color>
+    <color name="wordgame_title">#aa1122ff</color>
+    
+    <color name="board_background">#3500ffff</color>
+    <color name="board_tile">#64c6d4ef</color>
+    <color name="board_letter">#64000000</color>
+    <color name="board_selected">#64ff8000</color>
+    <color name="board_gridlines">#6456648f</color>
+    
+    <!-- Communication colors -->
+    <color name="communication_background">#2233dd22</color>
+    <color name="communication_heading">#dd22ff22</color>
+    
+    <!-- Two Player Word Game colors -->
+    <color name="two_player_wordgame_background">#223344dd</color>
+    <color name="two_player_wordgame_title">#aa1122ff</color>
+    <color name="two_player_wordgame_welcome_msg">#aa1199ff</color>
+    
+    <!-- Trickiest Part colors -->
+    <color name="trickiest_part_background">#223344dd</color>
+    
+    <!-- Final Project -->
+    <color name="final_proj_btn_bg_color">#FFFFD553</color>
+    <color name="final_proj_btn_fore_color">#FF8B2A13</color>
+    <color name="final_proj_txt_fore_color">#FF8B2A13</color>
+    
+</resources>

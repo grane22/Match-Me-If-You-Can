@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="my_name">Dushyant Deshmukh</string>
+    <string name="app_name">NUMAD14S-DushyantDeshmukh</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="about_label">About</string>
+    <string name="welcome_msg">Welcome!</string>
+    <string name="gen_error_label">Generate Error</string>
+    <string name="sudoku_label">Sudoku</string>
+    <string name="dictionary_label">Dictionary</string>
+    <string name="quit_label">Quit</string>
+    <string name="about_text">\
+Sample about text. Needs to be updated&#8230;</string>
+
+    <!-- About screen strings -->
+    <string name="about_name">Name: Dushyant Deshmukh</string>
+    <string name="about_email">Email: deshmukh.d@husky.neu.edu</string>
+    <string name="about_school_year">Year: 2nd year MS</string>
+    <string name="about_degree_prog">Program: MS in Computer Science</string>
+    <string name="about_phone_unique_id_label">Unique ID of Phone</string>
+    <string name="about_ok_label">OK</string>
+
+    <!-- Dictionary screen strings -->
+    <string name="dictionary_title_label">Test Dictionary</string>
+    <string name="dictionary_clear">Clear</string>
+    <string name="dictionary_return">Return to Menu</string>
+    <string name="dictionary_ack">Acknowledgements</string>
+    <string name="dictionary_textbox_hint">Enter your word here&#8230;</string>
+    <string name="dictionary_ack_title">Dictionary Acknowledgements</string>
+    <string name="dictionary_ack_ok_label">OK</string>
+    <string name="dictionary_acks"> 1. The valid word beep sound \'dictionary_beep.mp3\' has been downloaded from following online rersource:\r\n
+        								http://soundbible.com/1682-Robot-Blip.html \r\n\r\n
+        							2. The approach to use BloomFilter encoding to compress the wordlist and then perform a quick lookup was sugested to me by Zhongjie Mao. \r\n\r\n
+									3. For my BloomFilter implementation, I have referred to Wikipedia and the following implementation on Github:\r\n
+									   http://en.wikipedia.org/wiki/Bloom_filter\r\n
+									   https://github.com/magnuss/java-bloomfilter\r\n
+									   \r\n
+									4. For the compressed file conversion to and from byte array, I referred to following online rersources:\r\n
+									   http://www.exampledepot.8waytrips.com/egs/java.util/Bits2Array.html\r\n
+									   http://stackoverflow.com/questions/6197411/converting-from-bitset-to-byte-array\r\n</string>
+
+    <!-- Word Game screen strings -->
+    <string name="wordgame_title_label">Word Game</string>
+    <string name="wordgame_newgame">New Game</string>
+    <string name="wordgame_continue">Continue</string>
+    <string name="wordgame_settings">Settings</string>
+    <string name="wordgame_settings_shortcut">s</string>
+    <string name="wordgame_return">Return to Menu</string>
+    <string name="wordgame_ack">Acknowledgements</string>
+    <string name="wordgame_ack_ok_label">OK</string>
+    <string name="wordgame_acks">1. The basic structure of this game is based on \'Letris 2\' game on Android.\r\n\r\n
+        						2. Sudoku game in \'Hello Android\' book has been used as a reference for 2D graphics, storing state and other game settings.\r\n\r\n
+        						3. The sounds \'button_press\', \'wordgame_bg_music\' and \'wordgame_menu_music\' used in the game are referenced from \'www.SoundJay.com\'.\r\n\r\n
+        						4. The sounds \'count_down\', \'game_over_gong\', \'valid_word_beep\' and \'invalid_word_beep\' used in the gme are referenced from \'www.SoundBible.com\'.\r\n\r\n
+        						5. Android tutorials from \'www.lynda.com\' were also very helpful for this assignment.\r\n</string>
+    <string name="wordgame_instructions_title">How to Play</string>
+    <string name="wordgame_instructions_ok_label">OK</string>
+    <string name="wordgame_instructions">1. The game starts with the bottom row pre-populated with letters.\r\n\r\n
+        								2. A new letter appears on the screen at regular time intervals depending on the difficulty level.\r\n\r\n
+        								3. User has to click/tap on individual letters to form a word in that sequence, which is shown below the board of letters.\r\n\r\n
+        								4. If the word formed by the user is valid, the word turns green. User should click/tap this word to confirm it.\r\n
+        								    This will increase the score by that words length and the corresponding letters will disappear from the board.\r\n\r\n
+        								5.If the word formed by the user is invalid, the word turns red. User should click/tap the \'Clear\' button to clear the selection of letters.\r\n\r\n
+        								6. User needs to complete as many valid words as possible before the board is completely filled with letters.\r\n\r\n
+        								7. The number of points earned for each valid word is equal to the length of that word. \r\n
+        								    At the end of game, users can see their total score, longest word\'s length and accuracy.\r\n\r\n
+        								8. User can change the difficulty level, no. of rows and no. of columns from the settings button shown on the menu screen.\r\n\r\n
+        								9. User can pause or resume the game at any moment using the \'Pause\'/\'Resume\' button.\r\n\r\n
+        								10. When the board is close to getting completely filled, users can hear a count down sound to notify them about the last few seconds remaining.\r\n</string>
+    <string name="wordgame_hints_title">Hints</string>
+    <string name="wordgame_hints_ok_label">OK</string>
+    <string name="wordgame_hints">1. Never settle for one word. Almost every word on your game board can be added to. For example, the word AGE can be turned into AGED by adding a D. \r\n\r\n
+        						2. It is worth waiting for a four letter scoring opportunity to come up rather than zooming through the level with three letter words and blitzing the objectives.\r\n\r\n
+        						3. When time is running out, quickly complete as many 3 letter words as possible.\r\n</string>
+    <string name="wordgame_clear">Clear</string>
+    <string name="wordgame_pause">Pause</string>
+    <string name="wordgame_resume">Resume Game</string>
+    <string name="wordgame_hint">Hint</string>
+    <string name="wordgame_quit">Quit</string>
+    <string name="wordgame_currscore">Score: 0</string>
+
+    <!-- Word Game - Game Over screen strings -->
+    <string name="wordgame_gameover_title">Game Over</string>
+    <string name="wordgame_gameover_msg">You can do better ;-)</string>
+    <string name="wordgame_gameover_score">Score: </string>
+    <string name="wordgame_gameover_accuracy">Accuracy: </string>
+    <string name="wordgame_gameover_longestword">Longest word: </string>
+    <string name="wordgame_gameover_restart_label">RESTART</string>
+    <string name="wordgame_gameover_quit_label">QUIT</string>
+
+    <!-- Word Game - Preference screen strings -->
+    <string name="pref_wordgame_rows_summary">No of rows on the board</string>
+    <string name="pref_wordgame_rows">Rows</string>
+    <string name="pref_wordgame_cols_summary">No of cols on the board</string>
+    <string name="pref_wordgame_cols">Cols</string>
+    <string name="pref_wordgame_difficulty_summary">Difficulty level of the game</string>
+    <string name="pref_wordgame_difficulty">Difficulty</string>
+
+    <!-- Communications screen strings -->
+    <string name="communication_title_label">Communication</string>
+    <string name="communication_heading_label">Communication Tests</string>
+    <string name="communication_storing_data">Storing Data on Cloud</string>
+    <string name="communication_interphone_comm">Inter Phone Communication</string>
+    <string name="communication_ack_label">Acknowledgements</string>
+    <string name="communication_quit">Quit</string>
+    <string name="communication_storing_data_title_label">Test Storing Data</string>
+    <string name="communication_storing_data_msg">Enter key and value to store on cloud</string>
+    <string name="communication_storing_data_key_hint">Enter key here&#8230;</string>
+    <string name="communication_storing_data_value_hint">Enter value here&#8230;</string>
+    <string name="communication_storing_data_save">Save</string>
+    <string name="communication_storing_data_fetch">Fetch</string>
+    <string name="communication_storing_data_clear">Clear</string>
+    <string name="communication_storing_data_quit">Return to menu</string>
+    <string name="communication_interphone_comm_title_label">Test Inter-phone Communication</string>
+    <string name="communication_interphone_comm_username_hint">Enter username here&#8230;</string>
+    <string name="communication_interphone_comm_startgame">Start Game</string>
+    <string name="communication_interphone_comm_sendmsg_hint">Enter your message here&#8230;</string>
+    <string name="communication_interphone_comm_sendmsg">Send Message</string>
+    <string name="communication_interphone_comm_quit">Return to menu</string>
+    <string name="communication_ack_ok_label">OK</string>
+    <string name="communication_acks">Following is the list of online resources referred:\r\n \r\n
+        1. Google Cloud Messaging (GCM) \r\n
+        http://developer.android.com/google/gcm/index.html \r\n \r\n
+        1. Making HTTP post call: \r\n
+        http://www.mkyong.com/java/how-to-send-http-request-getpost-in-java/ \r\n \r\n
+        2. Setting up a broadcast receiver: \r\n
+        http://www.androidsnippets.com/how-to-set-up-a-broadcastreceiver-intent \r\n \r\n
+        3. Checking if activity is currently active: \r\n
+        http://androidblog.reindustries.com/check-if-an-android-activity-is-currently-running/ \r\n \r\n
+        4. Intent flags while launching activity: \r\n
+        http://blog.akquinet.de/2010/04/15/android-activites-and-tasks-series-intent-flags/ \r\n \r\n
+        5. Checking if internet is available: \r\n
+        http://stackoverflow.com/questions/8573176/internet-connection-error \r\n</string>
+
+    <!-- 2P Word Game screen strings -->
+    <string name="two_player_wordgame_title_label">Two Player Word Game</string>
+    <string name="two_player_wordgame_welcome_msg">Hello </string>
+    <string name="two_player_wordgame_username_hint">Enter username&#8230;</string>
+    <string name="two_player_wordgame_newgame">New Game</string>
+    <string name="two_player_wordgame_continue">Continue</string>
+    <string name="two_player_wordgame_top_scorers">Top Scorers</string>
+    <string name="two_player_wordgame_settings">Settings</string>
+    <string name="two_player_wordgame_settings_shortcut">s</string>
+    <string name="two_player_wordgame_return">Return to Menu</string>
+    <string name="two_player_wordgame_ack">Acknowledgements</string>
+    <string name="two_player_wordgame_ack_ok_label">OK</string>
+    <string name="two_player_wordgame_instructions_title">How to Play</string>
+    <string name="two_player_wordgame_instructions">Every game will have 5 rounds (turn by turn), where in every turn each player gets 30 secs to make as many words as possible. 
+                                            \r\nEach word will fetch user points depending on length of that word.
+                                            \r\nAt the end of 5 rounds, the scores of all rounds will be added and the player having greater score will be the winner.\r\n\r\n
+                                            1. User can find the opponent using the specific username or connect to a random opponent. \r\n\r\n
+                                            2. Connecting to a random opponent can also be done by shaking the phone. \r\n\r\n
+                                        3. The game starts with the bottom row pre-populated with letters.\r\n\r\n
+                                        4. A new letter appears on the screen at regular time intervals depending on the difficulty level.\r\n\r\n
+                                        5. User has to click/tap on individual letters to form a word in that sequence, which is shown below the board of letters.\r\n\r\n
+                                        6. If the word formed by the user is valid, the word turns green. User should click/tap this word to confirm it.\r\n
+                                            This will increase the score by that words length and the corresponding letters will disappear from the board.\r\n\r\n
+                                        7.If the word formed by the user is invalid, the word turns red. User should click/tap the \'Clear\' button to clear the selection of letters.\r\n\r\n
+                                        8. User needs to complete as many valid words as possible before the timer runs out or the board is completely filled with letters.\r\n\r\n
+                                        9. The number of points earned for each valid word is equal to the length of that word. \r\n
+                                            At the end of each round, users can see their total score for that round.\r\n\r\n
+                                        10. User can pause or resume the game at any moment using the \'Pause\'/\'Resume\' button.\r\n\r\n
+                                        11. When the board is close to getting completely filled, users can hear a count down sound to notify them about the last few seconds remaining.\r\n</string>
+    <string name="two_player_wordgame_instructions_ok_label">OK</string>
+    <string name="two_player_wordgame_clear">Clear</string>
+    <string name="two_player_wordgame_pause">Pause</string>
+    <string name="two_player_wordgame_resume">Resume Game</string>
+    <string name="two_player_wordgame_quit">Quit</string>
+    <string name="two_player_wordgame_currscore">Score: 0</string>
+
+    <!-- 2P Word Game - Game Over screen strings -->
+    <string name="two_player_wordgame_gameover_title">Game Over</string>
+    <string name="two_player_wordgame_gameover_msg">You can do better ;-)</string>
+    <string name="two_player_wordgame_gameover_score">Score: </string>
+    <string name="two_player_wordgame_gameover_accuracy">Accuracy: </string>
+    <string name="two_player_wordgame_gameover_longestword">Longest word: </string>
+    <string name="two_player_wordgame_gameover_restart_label">RESTART</string>
+    <string name="two_player_wordgame_gameover_quit_label">QUIT</string>
+
+    <!-- 2P Word Game - Preference screen strings -->
+    <string name="pref_two_player_wordgame_rows_summary">No of rows on the board</string>
+    <string name="pref_two_player_wordgame_rows">Rows</string>
+    <string name="pref_two_player_wordgame_cols_summary">No of cols on the board</string>
+    <string name="pref_two_player_wordgame_cols">Cols</string>
+
+    <!-- 2P Word Game Choose Opponent strings -->
+    <string name="two_player_wordgame_choose_opponent_title">Choose Opponent</string>
+    <string name="two_player_wordgame_opponent_name_hint">Enter opponent username here&#8230;</string>
+    <string name="two_player_wordgame_find_opponent">Find Opponent</string>
+    <string name="two_player_wordgame_random_opponent"> Random Opponent \n(Shake to connect)</string>
+    <string name="two_player_wordgame_back">Back</string>
+
+    <!-- 2P Word Game Waiting for Opponent strings -->
+    <string name="two_player_wordgame_waiting_for_opponent">Waiting for opponent</string>
+    <string name="two_player_wordgame_waiting_for_opponent_text">Waiting for opponent to accept 
+        your game request&#8230;</string>
+
+    <!-- 2P Word Game Message from Opponent strings -->
+    <string name="two_player_wordgame_msg_from_opponent">Message from opponent</string>
+    <string name="two_player_wordgame_msg_from_opponent_text">Message from opponent.</string>
+    <string name="two_player_wordgame_play">Play</string>
+
+    <!-- 2P Word Game Request from Opponent strings -->
+    <string name="two_player_wordgame_request_from_opponent">Request from opponent</string>
+    <string name="two_player_wordgame_request_from_opponent_text">Request from opponent</string>
+    <string name="two_player_wordgame_accept">Accept</string>
+    <string name="two_player_wordgame_reject">Reject</string>
+
+    <!-- 2P Word Game Request from Opponent strings -->
+    <string name="two_player_wordgame_currround">Round #</string>
+    <string name="two_player_wordgame_time">Time: 0 sec(s)</string>
+    <string name="two_player_wordgame_score">Score: 0</string>
+    <string name="two_player_wordgame_total_score">Total Score</string>
+    <string name="two_player_wordgame_player1">Player 1: </string>
+    <string name="two_player_wordgame_player2">Player 2: </string>
+    <string name="two_player_wordgame_p1_score">P1 score</string>
+    <string name="two_player_wordgame_p2_score">P2 score</string>
+    <string name="two_player_wordgame_top_scorers_ok_label">Back to Menu</string>
+    <string name="two_player_wordgame_acks">Following is the list of online resources referred:\r\n \r\n
+        1. Google Cloud Messaging (GCM) \r\n
+        http://developer.android.com/google/gcm/index.html \r\n \r\n
+        1. Making HTTP post call: \r\n
+        http://www.mkyong.com/java/how-to-send-http-request-getpost-in-java/ \r\n \r\n
+        2. Setting up a broadcast receiver: \r\n
+        http://www.androidsnippets.com/how-to-set-up-a-broadcastreceiver-intent \r\n \r\n
+        3. Checking if activity is currently active: \r\n
+        http://androidblog.reindustries.com/check-if-an-android-activity-is-currently-running/ \r\n \r\n
+        4. Intent flags while launching activity: \r\n
+        http://blog.akquinet.de/2010/04/15/android-activites-and-tasks-series-intent-flags/ \r\n \r\n
+        5. Checking if internet is available: \r\n
+        http://stackoverflow.com/questions/8573176/internet-connection-error \r\n \r\n
+        6. Detecting shake using an accelerometer: \r\n 
+        http://androidexample.com/Accelerometer_Basic_Example_-_Detect_Phone_Shake_Motion/index.php?view=article_discriptionaid=109&amp;aaid=131 \r\n
+        </string>
+
+    <!-- Trickiest Part strings -->
+    <string name="trickiest_part_title_label">Trickiest Part</string>
+    <string name="trickiest_part_test">Test</string>
+    <string name="trickiest_part_ack">Acknowledgements</string>
+    <string name="trickiest_part_acks">Following is the list of online resources referred:\r\n \r\n
+        1. Computing regression line equation to get the threshold value to decide matching \r\n
+		http://www.mathportal.org/calculators/statistics-calculator/correlation-and-regression-calculator.php \r\n \r\n
+		2. Android Camera \r\n
+		http://developer.android.com/guide/topics/media/camera.html#custom-camera \r\n \r\n
+		3. Converting an image file into bitmap \r\n
+		http://stackoverflow.com/questions/8710515/reading-an-image-file-into-bitmap-from-sdcard \r\n \r\n
+		4. Decoding a scaled image \r\n
+		http://developer.android.com/training/camera/photobasics.html \r\n \r\n
+		5. pHash algorithm to detect similarity \r\n
+		http://phash.org/ \r\n \r\n
+		6. Using OpenCV for similarity measurement \r\n
+		http://docs.opencv.org/doc/tutorials/highgui/video-input-psnr-ssim/video-input-psnr-ssim.html#videoinputpsnrmssim \r\n
+    </string>
+    <string name="trickiest_part_instructions">Instructions</string>
+    <string name="trickiest_part_instructions_detailed">1. Once you click on the “test” button, you will see a camera screen, a blank Imageview and three buttons.\r\n \r\n 
+			2. On clicking on the “capture” button, you can click an image. The image captured will be seen on the ImageView and “match” button appears in place of “capture” button.\r\n \r\n
+			3. Capture another image and test it with the earlier captured one by clicking the “match” button.\r\n \r\n
+			4. Clicking on “Clear” button would clear the image on ImageView.\r\n \r\n
+            5. Clicking on “Exit” would go to the previous screen.\r\n \r\n
+            NOTE: For detecting similar images, we are computing the Peak Signal to noise Ratio (PSNR) between the two images and comparing it against a threshold value of 14.
+    </string>
+    <string name="trickiest_part_ok_label">OK</string>
+    <string name="trickiest_part_quit">Quit</string>
+    <string name="trickiest_part_capture_img">Capture</string>
+    <string name="trickiest_part_match_img">Match</string>
+    <string name="trickiest_part_clear_img">Clear</string>
+    
+    <!-- Sudoku strings -->
+    <string name="sudoku_app_name">Sudoku</string>
+    <string name="sudoku_main_title">Android Sudoku</string>
+    <string name="sudoku_continue_label">Continue</string>
+    <string name="sudoku_new_game_label">New Game</string>
+    <string name="sudoku_about_label">About</string>
+    <string name="sudoku_exit_label">Exit</string>
+    <string name="sudoku_settings_label">Settings&#8230;</string>
+    <string name="sudoku_settings_title">Sudoku settings</string>
+    <string name="sudoku_settings_shortcut">s</string>
+    <string name="sudoku_music_title">Music</string>
+    <string name="sudoku_music_summary">Play background music</string>
+    <string name="sudoku_hints_title">Hints</string>
+    <string name="sudoku_hints_summary">Show hints during play</string>
+    <string name="sudoku_new_game_title">Difficulty</string>
+    <string name="sudoku_easy_label">Easy</string>
+    <string name="sudoku_medium_label">Medium</string>
+    <string name="sudoku_hard_label">Hard</string>
+    <string name="sudoku_game_title">Game</string>
+    <string name="sudoku_no_moves_label">No moves</string>
+    <string name="sudoku_keypad_title">Keypad</string>
+    <string name="sudoku_about_title">About Android Sudoku</string>
+    <string name="sudoku_about_text">\
+				Sudoku is a logic-based number placement puzzle.
+				Starting with a partially completed 9x9 grid, the
+				objective is to fill the grid so that each
+				row, each column, and each of the 3x3 boxes
+				(also called <i>blocks</i>) contains the digits
+				1 to 9 exactly once.</string>
+
+    <!-- Final Project -->
+    <string name="final_proj_title_label">Final Project</string>
+    <string name="final_proj_name">Match Me If You Can</string>
+    <string name="final_proj_icon_name">MAD14S-Match Me If You Can</string>
+    <string name="final_proj_capture_label">Capture</string>
+    <string name="final_proj_capture_btn">Capture</string>
+    <string name="final_proj_accept_btn">Save</string>
+    <string name="final_proj_reject_btn">Discard</string>
+    <string name="final_proj_match_btn">Match</string>
+    <string name="final_proj_Skip_btn">Skip</string>
+	<string name="final_proj_single_phone_mode">Single Phone Mode</string>
+    <string name="final_proj_dual_phone_mode">Dual Phone Mode</string>
+    <string name="final_proj_settings">Settings</string>
+    <string name="final_proj_exit_game">Exit Game</string>
+    
+    <string name="final_proj_choose_opponent_title">Select Opponent</string>
+    <string name="final_proj_opponent_name_hint">Enter opponent username here&#8230;</string>
+    <string name="final_proj_user_name_hint">Enter user username here&#8230;</string>
+    <string name="final_proj_submit_user_name">Submit User Name</string>
+    <string name="final_proj_find_opponent">Find Opponent</string>
+    <string name="final_proj_back_to_menu">Back to Main Menu</string>
+    <string name="final_proj_connection_label">Find Opponent</string>
+    <string name="final_proj_proceed_to_game">Proceed to Game</string>
+    <string name="final_proj_proceed_to_ack">Acknowledgements</string>
+    
+    <string name="final_proj_skip_btn">Skip</string>
+    <string name="final_proj_end_btn">End</string>
+    <string name="final_proj_img_count_textview">Img Count: 0</string>
+    <string name="final_proj_time_elapsed_textview"> 0 sec</string>
+    <string name="final_proj_match_label">Match</string>
+    <string name="final_proj_back_to_main_menu_label">Back To Main Menu</string>
+    
+    <string name="final_proj_main_menu_label">Main Menu</string>
+    <string name="final_proj_game_finish_text">Final Game Timings</string>
+    <string name="final_proj_game_finish_label">Game Over</string>
+
+    <string name="final_proj_tutorial_label">Tutorial</string>
+    <string name="final_proj_practice_label">Practice</string>
+    <string name="final_proj_practice_btn">Practice</string>
+    <string name="final_proj_clear_btn">Clear</string>
+    <string name="final_proj_quit_btn">Quit</string>
+    <string name="final_proj_end_practice_btn">End Practice</string>
+    
+    <string name="final_proj_tutorial">Tutorial</string>
+    <string name="final_proj_step1">\r\nStep 1: \r\n
+                                    Find an opponent by entering his/her username. \r\n
+                                    First time users need to enter their own username before trying to connect to an opponent.\r\n</string>
+    <string name="final_proj_step2">\r\nStep 2: \r\n
+                                    Swap phone with opponent and capture images for your opponent to find. \r\n
+                                    Once an image is captured, you can save or discard it. \r\n</string>
+    <string name="final_proj_step3">\r\nStep 3: \r\n
+                                    Swap phones with opponent again and start matching the images that show up on the screen. \r\n
+                                    You can skip an image and come back to it later. \r\n
+                                    Try to complete matching all images in lesser time than your opponent. (Refer timer on top right)\r\n</string>
+    <string name="final_proj_step4">\r\nStep 4: \r\n
+                                    The player to match more images in less time wins the game. \r\n
+                                    So make sure you move around quickly.\r\n</string>
+                                    
+    <string name="final_proj_single_phone_step1">\r\nStep 1: \r\n
+                                    Player 1 should capture images for player 2 to find. \r\n
+                                    Once an image is captured, players can save or discard it.\r\n</string>
+    <string name="final_proj_single_phone_step2">\r\nStep 2: \r\n
+                                    Once player 1 has finished, player 2 should capture images for player 1 to find. \r\n</string>
+    <string name="final_proj_single_phone_step3">\r\nStep 3: \r\n
+                                    Player 1 should start matching the images that show up on the screen. \r\n
+                                    Players can skip an image and come back to it later. \r\n</string>
+    <string name="final_proj_single_phone_step4">\r\nStep 4: \r\n
+                                    After player 1 has finished, player 2 should start matching the images. \r\n
+                                    The player to match more images in less time wins the game. \r\n
+                                    So make sure you move around quickly.\r\n</string>
+                                    
+    <string name="final_proj_skip_tutorial">Skip Tutorial</string>
+    <string name="final_proj_prev">Previous</string>
+    <string name="final_proj_next">Next</string>
+    <string name="final_proj_practice">Practice</string>
+    <string name="final_proj_back">Back</string>
+    <string name="final_proj_ack">Acknowledgements</string>
+    <string name="final_proj_acks">Following is the list of online resources referred:\r\n \r\n
+        1. OpenCV library to make use of utility methods for image processing.\r\n \r\n
+        2. \'Pro Android Augmented Reality\' text for learning concepts regarding working with camera and images. \r\n \r\n
+        3. \'Hello Android, 3rd edition\', have been very helpful for understanding various basic concepts in Android development. \r\n \r\n
+        4. \'Android Essential Training\' on \'www.lynda.com\' and tutorials on \'www.vogella.com\' have been other very useful online resources. \r\n \r\n
+        5. Google cloud messaging is used for handling the two player connection, communication and notification. \r\n \r\n
+        6. Server data is being stored on the CCIS mHealth server provided by our Professor. \r\n \r\n
+        7. All sounds used throughout the app have been taken from either of following 2 links: \r\n 
+           http://soundbible.com and http://www.soundjay.com \r\n \r\n
+        8. App Icon is referred from following link: \r\n
+           https://www.google.com/search?q=bee+magnifying+glass+icon \r\n \r\n
+        9. The splash images for buttons were created by \'Vikram Deshmukh\' along with giving us creative feedback for color combinations and genral look and feel of the game. \r\n \r\n
+        10. Last but not the least, we are extremely thankful to Prof. Stephen Intille, Shang Ma and Zhongjie Mao for their valuable suggestions and feedback which has made it possible for us to have such a wonderful experience creating such a wonderful. \r\n \r\n
+        \r\n\r\n
+        Phones used for testing (apart from Netbeans emulators):\r\n
+        1. Samsung Galaxy S (Android version: 2.2.3) \r\n
+        2. Samsung Galaxy S2 (Android version: 4.1.2) \r\n
+        3. Samsung Galaxy S3 (Android version: 4.3) \r\n
+        4. Kyocera C5155 (Android version: 4.0.4) \r\n
+        5. Google Nexus 4 (Android version: 4.4.2) \r\n
+        6. Google Nexus 5 (Android version: 4.4.2) \r\n
+    </string>
+    <string name="final_proj_yes_label">Yes</string>
+    <string name="final_proj_no_label">No</string>
+    <string name="final_proj_ok_label">OK</string>
+	<string name="final_proj_end_game_label">End Game</string>
+    <string name="final_proj_end_matching_label">End Matching</string>
+    <string name="final_proj_intro_screen_label">App Description</string>
+    <string name="final_proj_app_description_text">APP DESCRIPTION \n\n
+                                                \'Match Me If You Can\' \n 
+                                                Do you like clicking pictures with your phone\'s camera? 
+                                                With \'Match Me If You Can\' you can play a scavenger hunt photo based exergame \n 
+                                                Play this two player game and click images of objects around the house. Both players will then hunt for the images clicked by one another. \n 
+                                                The player to find maximum images first wins. \n
+                                                It let\'s kids enjoy a fun playing experience while encouraging high levels of physical activity as they run around the house matching images. \n
+                                                \r\n
+                                                Target audience: 8 - 14 year old kids \r\n \r\n
+                                                Team Members: \r\n
+                                                Dushyant Deshmukh (deshmukh.d@husky.neu.edu) \n
+                                                Gaurav Rane (rane.g@husky.neu.edu) \n
+    </string>
+	
+    <!-- final proj - Preference screen strings -->
+    <string name="pref_final_proj_music_title">Music On</string>
+    <string name="pref_final_proj_music_summary">Music on/off</string>
+    <string name="pref_final_proj_show_tutorial">Show Tutorial</string>
+    <string name="pref_final_proj_show_tutorial_summary">Show tutorial at start of game</string>
+    <string name="pref_final_proj_no_of_imgs_title">No of Images</string>
+    <string name="pref_final_proj_no_of_imgs_summary">Number of images in the game</string>
+    <string name="pref_final_proj_matching_difficulty_title">Matching Difficulty</string>
+    <string name="pref_final_proj_matching_difficulty_summary">Difficulty level of matching images</string>
+</resources>

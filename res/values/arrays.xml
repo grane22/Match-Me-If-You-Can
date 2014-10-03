@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<resources>
+   <array name="sudoku_difficulty">
+      <item>@string/sudoku_easy_label</item>
+      <item>@string/sudoku_medium_label</item>
+      <item>@string/sudoku_hard_label</item>
+   </array>
+   
+   <string-array name="wordgame_rows">
+        <item name="5">5</item>
+        <item name="6">6</item>
+        <item name="7">7</item>
+        <item name="8">8</item>
+        <item name="9">9</item>
+        <item name="10">10</item>
+        <item name="11">11</item>
+    </string-array>
+    <string-array name="wordgame_rows_values">
+        <item name="5">5</item>
+        <item name="6">6</item>
+        <item name="7">7</item>
+        <item name="8">8</item>
+        <item name="9">9</item>
+        <item name="10">10</item>
+        <item name="11">11</item>
+    </string-array>
+    
+    <string-array name="wordgame_cols">
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+        <item name="6">6</item>
+        <item name="7">7</item>
+        <item name="8">8</item>
+        <item name="9">9</item>
+        
+    </string-array>
+    <string-array name="wordgame_cols_values">
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+        <item name="6">6</item>
+        <item name="7">7</item>
+        <item name="8">8</item>
+        <item name="9">9</item>
+    </string-array>
+    
+    <string-array name="wordgame_difficulty">
+        <item name="1">Easy</item>
+        <item name="2">Medium</item>
+        <item name="3">Hard</item>
+    </string-array>
+    <string-array name="wordgame_difficulty_values">
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+    </string-array>
+    
+    <string-array name="final_proj_matching_difficulty">
+        <item name="Easy">Easy</item>
+        <item name="Medium">Medium</item>
+        <item name="Hard">Hard</item>
+    </string-array>
+    
+    <string-array name="final_proj_matching_difficulty_values">
+        <item name="Easy">1</item>
+        <item name="Medium">2</item>
+        <item name="Hard">3</item>
+    </string-array>
+   
+    <string-array name="final_proj_no_of_imgs">
+        <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+        <item name="6">6</item>
+        <item name="7">7</item>
+        <item name="8">8</item>
+        <item name="9">9</item>
+        <item name="10">10</item>
+    </string-array>
+</resources>

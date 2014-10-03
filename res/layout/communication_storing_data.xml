@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="30dip"
+    android:background="@color/communication_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+	       <TextView 
+	           android:id="@+id/communication_storing_data_msg_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/communication_storing_data_msg"/>
+        
+	       <EditText
+            android:id="@+id/communication_storing_data_key_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:paddingBottom="10dp"
+            android:hint="@string/communication_storing_data_key_hint" >
+            <requestFocus />
+        </EditText>
+        
+	       <EditText
+            android:id="@+id/communication_storing_data_value_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:hint="@string/communication_storing_data_value_hint" >
+        </EditText>
+	       <TableLayout 
+	           android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center" 
+	           android:paddingBottom="10dp">
+	           <TableRow >
+	               <Button
+			            android:id="@+id/communication_storing_data_save_button"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center"
+			            android:text="@string/communication_storing_data_save" />
+	               
+	               <Button
+			            android:id="@+id/communication_storing_data_fetch_button"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center"
+			            android:text="@string/communication_storing_data_fetch" />
+	               
+	               <Button
+                        android:id="@+id/communication_storing_data_clear_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/communication_storing_data_clear" />
+	           </TableRow>
+	           <TableRow>
+	               <Button
+			            android:id="@+id/communication_storing_data_quit_button"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center"
+			            android:layout_span="3"
+			            android:text="@string/communication_storing_data_quit" />
+	           </TableRow>
+	       </TableLayout>
+		        
+		   <TextView 
+               android:id="@+id/communication_storing_data_result_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dip"
+            android:layout_gravity="center"
+            android:text=""/>
+		   
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.neu.madcourse.dushyantdeshmukh"
+    android:versionCode="10"
+    android:versionName="10" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />    
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    
+    <permission android:name="edu.neu.madcourse.dushyantdeshmukh.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="edu.neu.madcourse.dushyantdeshmukh.permission.C2D_MESSAGE" />
+    
+    <application android:allowBackup="true" 
+        android:icon="@drawable/ic_launcher" 
+        android:label="@string/app_name" 
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+        
+        <receiver
+            android:name="edu.neu.madcourse.dushyantdeshmukh.utilities.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="edu.neu.madcourse.dushyantdeshmukh" />
+            </intent-filter>
+        </receiver>
+        <service android:name="edu.neu.madcourse.dushyantdeshmukh.utilities.GcmIntentService" />
+        
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.MainActivity" android:label="@string/my_name">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.About" android:label="@string/about_label" android:theme="@android:style/Theme.Dialog">
+        </activity>
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.sudoku.Sudoku" android:label="@string/sudoku_app_name">
+        </activity>
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.sudoku.About" android:label="@string/sudoku_about_title" android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.sudoku.Prefs" android:label="@string/sudoku_settings_title">
+        </activity>
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.sudoku.Game" android:label="@string/sudoku_game_title" />
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.dictionary.Dictionary" android:configChanges="orientation" android:label="@string/dictionary_title_label" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.dictionary.Acknowledgements" android:label="@string/dictionary_ack_title" android:theme="@android:style/Theme.Dialog" />
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.wordgame.WordGame" android:screenOrientation="portrait" android:configChanges="orientation" android:label="@string/wordgame_title_label" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.wordgame.Acknowledgements" android:screenOrientation="portrait" android:label="@string/wordgame_ack" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.wordgame.Instructions" android:screenOrientation="portrait" android:label="@string/wordgame_instructions_title" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.wordgame.Hints" android:screenOrientation="portrait" android:label="@string/wordgame_hints_title" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.wordgame.Game" android:screenOrientation="portrait" android:configChanges="orientation" android:label="@string/wordgame_title_label" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.wordgame.GameOver" android:screenOrientation="portrait" android:configChanges="orientation" android:label="@string/wordgame_gameover_title" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.wordgame.Prefs" android:screenOrientation="portrait" android:label="@string/wordgame_settings" />
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.communication.Communication" android:label="@string/communication_title_label" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.communication.TestStoringData" android:label="@string/communication_storing_data_title_label" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.communication.TestInterphoneComm" android:label="@string/communication_interphone_comm_title_label" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.communication.Acknowledgements" android:label="@string/communication_ack_label" android:theme="@android:style/Theme.Dialog" />
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.two_player_wordgame.TwoPlayerWordGame" android:screenOrientation="portrait" android:configChanges="orientation" android:label="@string/two_player_wordgame_title_label" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.two_player_wordgame.Acknowledgements" android:screenOrientation="portrait" android:label="@string/two_player_wordgame_ack" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.two_player_wordgame.Instructions" android:screenOrientation="portrait" android:label="@string/two_player_wordgame_instructions_title" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.two_player_wordgame.Game" android:screenOrientation="portrait" android:configChanges="orientation" android:label="@string/two_player_wordgame_title_label" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.two_player_wordgame.GameOver" android:screenOrientation="portrait" android:configChanges="orientation" android:label="@string/two_player_wordgame_gameover_title" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.two_player_wordgame.Prefs" android:screenOrientation="portrait" android:label="@string/two_player_wordgame_settings" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.two_player_wordgame.ChooseOpponent" android:screenOrientation="portrait" android:configChanges="orientation" android:label="@string/two_player_wordgame_choose_opponent_title" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.two_player_wordgame.WaitingForOpponent" android:screenOrientation="portrait" android:label="@string/two_player_wordgame_waiting_for_opponent" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.two_player_wordgame.MsgFromOpponent" android:screenOrientation="portrait" android:label="@string/two_player_wordgame_msg_from_opponent" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.two_player_wordgame.RequestFromOpponent" android:screenOrientation="portrait" android:label="@string/two_player_wordgame_request_from_opponent" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.two_player_wordgame.TopScorers" android:screenOrientation="portrait" android:label="@string/two_player_wordgame_top_scorers" android:theme="@android:style/Theme.Dialog" />
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.trickiestpart.TrickiestPart" android:screenOrientation="portrait" android:label="@string/trickiest_part_title_label" > 
+            <intent-filter>
+                <action android:name="edu.neu.madcourse.dushyantdeshmukh.TRICKIEST_PART" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter> 
+            </activity>        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.trickiestpart.Acknowledgements" android:screenOrientation="portrait" android:label="@string/trickiest_part_ack" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.trickiestpart.Instructions" android:screenOrientation="portrait" android:label="@string/trickiest_part_instructions" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.trickiestpart.Test" android:screenOrientation="landscape" android:label="@string/trickiest_part_title_label" >
+	   </activity>
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.finalproject.Home" 
+            	  android:label="@string/final_proj_name"
+            	  android:icon="@drawable/final_proj_app_icon"
+            	  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            	  android:screenOrientation="landscape">
+            <intent-filter android:label="@string/final_proj_icon_name">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.finalproject.CaptureImage" 
+            android:screenOrientation="landscape" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/final_proj_capture_label" >
+        </activity>
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.finalproject.MatchImage" 
+            android:screenOrientation="landscape" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/final_proj_match_label" >
+        </activity>
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.finalproject.Connection"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/final_proj_connection_label">
+        </activity>
+        
+         <activity android:name="edu.neu.madcourse.dushyantdeshmukh.finalproject.GameFinish"
+            android:screenOrientation="landscape"
+            android:label="@string/final_proj_game_finish_label"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        
+         <activity android:name="edu.neu.madcourse.dushyantdeshmukh.finalproject.Tutorial"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/final_proj_tutorial_label">
+        </activity>
+        
+         <activity android:name="edu.neu.madcourse.dushyantdeshmukh.finalproject.Practice"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/final_proj_practice_label">
+        </activity>
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.finalproject.Acknowledgements" 
+             android:screenOrientation="landscape"
+             android:label="@string/final_proj_ack" 
+             android:theme="@android:style/Theme.Dialog" />
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.finalproject.IntroScreen" 
+             android:screenOrientation="landscape"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+             android:label="@string/final_proj_intro_screen_label">
+            <intent-filter>
+                <action android:name="edu.neu.madcourse.dushyantdeshmukh.FINAL_PROJECT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="edu.neu.madcourse.dushyantdeshmukh.finalproject.Prefs" 
+            android:label="@string/final_proj_settings">
+        </activity>
+        
+    </application>
+</manifest>
