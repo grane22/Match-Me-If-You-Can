@@ -8,3 +8,6 @@ App developed as a part of CS5520 (Mobile Application Development) coursework.
 - It is an interactive android mobile application in healthcare domain using advanced phone features like the camera sensor.
 
 Note: This app is published on Google Play store but is still in alpha testing mode
+
+(For project source-code refer:
+ https://github.com/grane22/Match-Me-If-You-Can/tree/master/src/edu/neu/madcourse/dushyantdeshmukh/finalproject )
